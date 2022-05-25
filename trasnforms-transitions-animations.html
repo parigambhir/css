@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakcgrounds and Text</title>
+    <link rel="stylesheet" href="stylesheets\css-pages-style.css" />
+    <style>
+      section p {
+        font-weight: bold;
+      }
+      section {
+        background-color: #5ac88b;
+        margin: 0px;
+        height: 1000px;
+      }
+      .nav-link {
+        padding: 5px;
+        margin: 0px;
+        background-color: #eeffee;
+        color: darkgreen;
+        border: 2px solid black;
+      }
+      .nav-link li {
+        display: inline-block;
+      }
+      h1 {
+        position: relative;
+        left: 50%;
+        background-color: #5ac88b;
+        transform: translateX(-50%);
+        display: inline-block;
+        -ms-transform: scew(30deg);
+        -o-transform: scew(30deg);
+        -moz-transform: scew(30deg);
+        -webkit-transform: scew(30deg);
+        transform: scew(30deg);
+      }
+      section div {
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      body {
+        color: aliceblue;
+        margin: 0;
+        animation: fade-in 1s ease-in 0.5s forwards;
+        -o-animation: fade-in 1s ease-in 0.5s forwards;
+        -moz-animation: fade-in 1s ease-in 0.5s forwards;
+        -webkit-animation: fade-in 1s ease-in 0.5s forwards;
+
+        /*  animation-name: fade-in;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-delay: 0.5s;
+        /*
+        animation-iteration-count: 2;
+        animation-direction: normal;
+        animation-fill-mode: forwards; */
+      }
+
+      @keyframes fade-in {
+        from {
+          position: absolute;
+          top: 400px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a href="index.html" class="nav-link"><li>Inline CSS</li></a>
+          <a href="internal-css.html" class="nav-link"><li>Internal CSS</li></a>
+          <a href="external-css.html" class="nav-link"><li>External CSS</li></a>
+          <a href="testing-cascading.html" class="nav-link">
+            <li>Cascading Css</li></a
+          >
+          <a href="classes-and-ids.html" class="nav-link"
+            ><li>Classes and IDs</li></a
+          >
+          <a href="div-and-span.html" class="nav-link"
+            ><li>Divs and Spans</li>
+          </a>
+          <a href="typography.html" class="nav-link"
+            ><li>Typography Principles</li></a
+          >
+          <a href="backgrounds-and-text.html" class="nav-link"
+            ><li>Backgrounds And Text</li></a
+          >
+          <a href="trasnforms-transitions-animations.html" class="nav-link"
+            ><li>Transforms, Transitions and Animations</li></a
+          >
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Transforms, transitions and animations</h1>
+      <p>
+        This page shows the effects of adding transformations, transitions and
+        animation to html tags
+      </p>
+    </main>
+    <section>
+      <div>
+        <p>School appropriiate text</p>
+        <p>School appropriiate text</p>
+        <p>School appropriiate text</p>
+        <p>School appropriiate text</p>
+        <p>School appropriiate text</p>
+        <p>School appropriiate text</p>
+        <p>School appropriiate text</p>
+      </div>
+    </section>
+  </body>
+</html>

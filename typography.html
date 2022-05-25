@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Classes and IDs</title>
+    <title>Typography Principles</title>
     <style>
+      * {
+        line-height: 140%;
+      }
       #style-by-id {
-        font-family: Georgia, Cambria, serif;
         font-weight: bold;
       }
       .nav-link {
@@ -29,15 +31,18 @@
         font-size: 20px;
       }
       body {
+        font-family: sans-serif;
         background-color: lavender;
         color: #51802b;
+        margin: 5% 10%;
       }
       h1 {
-        font-size: 40px;
+        font-size: 48px;
         text-align: center;
+        text-transform: uppercase;
       }
       p {
-        font-size: 24px;
+        font-size: 20px;
       }
     </style>
   </head>
@@ -48,23 +53,31 @@
           <a href="index.html" class="nav-link"><li>Inline CSS</li></a>
           <a href="internal-css.html" class="nav-link"><li>Internal CSS</li></a>
           <a href="external-css.html" class="nav-link"><li>External CSS</li></a>
-          <a href="testing-cascading.html" class="nav-link"
-            ><li>Cascading Css</li></a
+          <a href="testing-cascading.html" class="nav-link">
+            <li>Cascading Css</li></a
           >
           <a href="classes-and-ids.html" class="nav-link"
             ><li>Classes and IDs</li></a
           >
-          <a href="div-and-spans.html" class="nav-link"
+          <a href="div-and-span.html" class="nav-link"
             ><li>Divs and Spans</li>
           </a>
-          <a href="typography.html"><li>Typography Principles</li></a>
+          <a href="typography.html" class="nav-link"
+            ><li>Typography Principles</li></a
+          >
+          <a href="backgrounds-and-text.html" class="nav-link"
+            ><li>Backgrounds And Text</li></a
+          >
         </ul>
-        <h1>Classes and IDs</h1>
+        <h1>Typography Principles</h1>
       </nav>
     </header>
-    <p>This page shows the use of classes and IDs on a web page.</p>
-    <p id="styled-by-id">
-      This paragraph will show the effect of giving an ID and styling that ID.
-    </p>
+    <div style="background-color: ghostwhite; height: 140px; width: auto">
+      <p>This page shows the use of classes and IDs on a web page.</p>
+      <p id="styled-by-id">
+        This paragraph will show the effect of giving an ID and
+        <span style="color: #1c2c0f; font-weight: bold">styling</span> that ID.
+      </p>
+    </div>
   </body>
 </html>

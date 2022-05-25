@@ -1,11 +1,13 @@
 body {
-  background-color: lavender;
-  color: #51802b;
+  font-family: sans-serif;
+  background-color: ghostwhite;
+  color: #291541;
+  margin: 5% 10%;
 }
 h1 {
-  font-size: 40px;
+  font-size: 48px;
   text-align: center;
 }
 p {
-  font-size: 24px;
+  font-size: 20px;
 }
