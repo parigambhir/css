@@ -37,9 +37,26 @@
         margin: 5% 10%;
       }
       h1 {
+        position: relative;
         font-size: 48px;
         text-align: center;
         text-transform: uppercase;
+        /*allows you to hide the element but the space used up by the element stays there*/
+        visibility: hidden;
+        /* animation that swivels the heading when the page loads*/
+        animation: swivel 1s ease-in-out 0.3s forwards;
+        -o-animation: swivel 1s ease-in-out 0.3s forwards;
+        -moz-animation: swivel 1s ease-in-out 0.3s forwards;
+        -webkit-animation: swivel 1s ease-in-out 0.3s forwards;
+      }
+      @keyframes swivel {
+        from {
+          transform: rotateY(90deg);
+        }
+        to {
+          transform: rotateY(0deg);
+          visibility: visible;
+        }
       }
       p {
         font-size: 20px;
